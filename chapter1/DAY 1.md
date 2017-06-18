@@ -56,6 +56,8 @@ IC插上后。。因为引脚很多，一般很难取下来，如果暴力拔很
 
 实验电路：
 
+![arduino-day1-2-The-experimental-circuit](https://github.com/Tangchen329/ArduinoCourse/blob/master/chapter1/image/arduino-day1-2-The-experimental-circuit.png)
+
 程序代码：
 ```
 
@@ -92,8 +94,12 @@ void loop() {
 当进行了多次实验后，大家肯定不满足于一盏灯的闪烁，因此我们现在来设计一下多个LED的闪烁
 实验电路：
 
+![arduino-day1-3-The-experimental-circuit](https://github.com/Tangchen329/ArduinoCourse/blob/master/chapter1/image/arduino-day1-3-The-experimental-circuit.png)
+
 为什么空出了0和1两个接口呢？这两个接口其实共享了板子的串口，tx和rx，也就是说，如果在这两个接口上连接led的话，就无法进行正常的程序下载了。所以，一般我们会空出来不使用，一定要使用的情况下，也是先下载好程序然后再连接电路。
 实际电路：
+
+![arduino-day1-4-The-experimental-circuit](https://github.com/Tangchen329/ArduinoCourse/blob/master/chapter1/image/arduino-day1-4-The-experimental-circuit.png)
 
 程序代码：
 ```
