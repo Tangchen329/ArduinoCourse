@@ -65,8 +65,8 @@ else if (vol>=41)                                           //高温区温度设
 
 ![arduino-day5-4-The-experimental-circuit](https://github.com/Tangchen329/ArduinoCourse/blob/master/chapter5/image/arduino-day5-4-The-experimental-circuit.png)
 
--元器件：数码管、导线、电阻
-程序代码：
+- 元器件：数码管、导线、电阻
+- 程序代码：
 
 ```
 作用:arduino驱动数码管循环显示0,1,2,3,4几个数字
@@ -150,7 +150,7 @@ delay(1000);
 
 - 拓展：自己尝试显示10种数字
 
--扩展实验：红外遥控器
+- 扩展实验：红外遥控器
 
 实验电路：
 
