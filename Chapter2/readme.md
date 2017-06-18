@@ -3,7 +3,7 @@
 昨天制作了LED的闪烁之后，可能大家会觉得完全由程序控制的LED闪烁不够有趣，今天，我们尝试用按钮来对LED进行一些控制操作。
 实验电路：
 
-！[arduino-day2-1-The-experimental-circuit](https://github.com/Tangchen329/ArduinoCourse/blob/master/Chapter2/image/arduino-day2-1-The-experimental-circuit.png)
+![arduino-day2-1-The-experimental-circuit](https://github.com/Tangchen329/ArduinoCourse/blob/master/Chapter2/image/arduino-day2-1-The-experimental-circuit.png)
 
 实际电路：
 
