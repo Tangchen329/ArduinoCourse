@@ -3,11 +3,18 @@
 昨天制作了LED的闪烁之后，可能大家会觉得完全由程序控制的LED闪烁不够有趣，今天，我们尝试用按钮来对LED进行一些控制操作。
 实验电路：
 
+！[arduino-day2-1-The-experimental-circuit](https://github.com/Tangchen329/ArduinoCourse/blob/master/Chapter2/image/arduino-day2-1-The-experimental-circuit.png)
+
 实际电路：
+
+![arduino-day2-2-The-experimental-circuit](https://github.com/Tangchen329/ArduinoCourse/blob/master/Chapter2/image/arduino-day2-2-The-experimental-circuit.png)
 
 - 元器件：按钮、导线、电阻*2、LED
 - 注意事项：有不少同学反映按键接触不良，造成无法使用，这个主要是因为按键没有完全插进面包板，所以才会有此问题。上两个按键正确插入面包板的图，大家可以参考一下，按入面包板的时候要左右用力均匀，完全压入面包板就可以了。如果往出拿呢，也很简单，可以使用面包板跳线盒中的圆头镊子，慢慢从中间槽中撬出来就可以了。
 
+![arduino-day2-3](https://github.com/Tangchen329/ArduinoCourse/blob/master/Chapter2/image/arduino-day2-3.png)
+
+![arduino-day2-4](https://github.com/Tangchen329/ArduinoCourse/blob/master/Chapter2/image/arduino-day2-4.png)
 
 程序代码：
 作用:当你按下按钮后1秒钟，灯会亮，然后维持5秒钟，熄灭
@@ -63,10 +70,14 @@ void loop()
 ### 实验二：按钮PWM控制LED亮度
 实验电路：
 
-元器件：电阻*3，LED，按钮*2，导线
-从上图我们可以看到两个开关分别接到了数字接口，做输入检测，LED接到了板子上带有#号标识的数字接口上，注意只有带#号标识的接口才具备PWM输出功能。
+![arduino-day2-5-The-experimental-circuit](https://github.com/Tangchen329/ArduinoCourse/blob/master/Chapter2/image/arduino-day2-5-The-experimental-circuit.png)
+
+- 元器件：电阻*3，LED，按钮*2，导线
+- 从上图我们可以看到两个开关分别接到了数字接口，做输入检测，LED接到了板子上带有#号标识的数字接口上，注意只有带#号标识的接口才具备PWM输出功能。
 程序代码：
-作用:通过两个开关来控制led的亮度
+- 作用:通过两个开关来控制led的亮度
+
+```
  */
  
 int n=0;
@@ -101,13 +112,15 @@ analogWrite(6,n);               //使用PWM控制6号口输出，变量n的取�
   }
 }
 
-详细教程：http://www.geek-workshop.com/thread-1054-1-1.html
+```
+- 详细教程：http://www.geek-workshop.com/thread-1054-1-1.html
 
-拓展：自行调节单位按钮的变化量度
-课后练习：每次按1按键时，亮度增加速率变快，每次按2按键时，亮度减少速率变慢
+- 拓展：自行调节单位按钮的变化量度
+- 课后练习：每次按1按键时，亮度增加速率变快，每次按2按键时，亮度减少速率变慢
 
-扩展实验：脉冲计时
+# 扩展实验：脉冲计时
 实验电路：
+![arduino-day2-6-The-experimental-circuit](https://github.com/Tangchen329/ArduinoCourse/blob/master/Chapter2/image/arduino-day2-6-The-experimental-circuit.png.png)
 
 元器件：电阻、按键、导线
 程序代码：
@@ -131,6 +144,8 @@ void loop()
 ```
 
 - 打开串口监视器后，按下按钮，就会返回每次按下松开这段时间有多长。比如第一条是196377，第二条是206748。他们对应的单位是微秒，单位换位秒以后分别是0.196377秒与0.206748秒。
+
+![arduino-day2-7](https://github.com/Tangchen329/ArduinoCourse/blob/master/Chapter2/image/arduino-day2-7.png)
 
 - pulseIn()函数用来读取一个引脚的脉冲（HIGH或LOW）。例如，如果value是HIGH，pulseIn()会等待引脚变为HIGH，开始计时，再等待引脚变为LOW并停止计时。返回脉冲的长度，单位毫秒。如果在指定的时间内无脉冲函数返回。
 
