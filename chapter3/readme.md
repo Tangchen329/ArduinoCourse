@@ -2,17 +2,17 @@
 ## 实验一：电位器PWM控制LED亮度
 线性电位器是一个模拟量的电子元器件，模拟量和数字量有什么区别呢？简单的说，数字量只有0和1两种状态，对应的就是开和关，高电平和低电平。而模拟量则不一样，他的数据状态呈现线性状态例如1到1000。
 所以，本次试验我们采用电位器对LED调光，这样不会像上一次按钮实验那样，亮度的变化有层级的跳跃，用电位器调光的话能够比较连贯柔和。
-实验电路：
+- 实验电路：
 
 ![arduino-day3-1-The-experimental-circuit](https://github.com/Tangchen329/ArduinoCourse/blob/master/chapter3/image/arduino-day3-1-The-experimental-circuit.png)
 
-实际电路：
+- 实际电路：
 
 ![arduino-day3-2-The-experimental-circuit](https://github.com/Tangchen329/ArduinoCourse/blob/master/chapter3/image/arduino-day3-2-The-experimental-circuit.png)
 
 我们将电位器接入了arduino控制板的A0模拟量检测口，arduino的模拟接口能够测量0-5V的电压，对应的返回值为0-1024，对电压变化的测量精度相对较高。
-程序代码：
-作用:通过精密线性电位器PWM控制led亮度
+- 程序代码：
+- 作用:通过精密线性电位器PWM控制led亮度
 
 ```
 */
@@ -45,8 +45,8 @@ void loop()
 实际电路：
 
 ![arduino-day3-4-The-experimental-circuit](https://github.com/Tangchen329/ArduinoCourse/blob/master/chapter3/image/arduino-day3-4-The-experimental-circuit.png)
-程序代码：
-作用:通过循环语句控制PWM来达到呼吸灯效果
+- 程序代码：
+- 作用:通过循环语句控制PWM来达到呼吸灯效果
 
 ```
 */
