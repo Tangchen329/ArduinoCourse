@@ -45,6 +45,7 @@ Arduino板
 前两位是数字，第三位代表0的个数，最后一位指误差，倒数第二环，可以金色（代表×0.1）和银色的（代表×0.01），最后一环误差可以无色（20%）
 面包板的构造：
 
+![arduino-day1-1-The structure-of-the-bread-plate](https://github.com/Tangchen329/ArduinoCourse/blob/master/chapter1/image/arduino-day1-1-The%20structure-of-the-bread-plate.png)
 的两边拥有4组8条横向相连的插孔，这4组我们称之为电源孔，一般是作为电源引入的通路，中间是上下两部分，纵向每5个孔为一个通道（这5个孔是联通的），这个就是我们的主工作区，用来插接原件和跳线。
 
 面包板中间为什么要设计一条凹槽呢，中间的分隔部分这样子设计也是有讲究的。
