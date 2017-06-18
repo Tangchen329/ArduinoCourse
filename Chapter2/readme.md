@@ -152,6 +152,7 @@ void loop()
 - 计时范围从10微秒至3分钟。（1秒=1000毫秒=1000000微秒）
 
 语法：
+```
 pulseIn(pin, value) 
 pulseIn(pin, value, timeout)
-
+```
